@@ -1,0 +1,44 @@
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# Node.js #
+###########
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Logs #
+########
+*.log
+logs/
+*.log.*
+*.out
+
+# Temporary files #
+###################
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Editor or IDE Files #
+#######################
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.pyc
+*.pyo
+*.env
+
+# System Folders #
+##################
+.vagrant/
+dist/
+build/
+coverage/
