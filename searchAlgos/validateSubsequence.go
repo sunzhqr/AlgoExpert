@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	arr := []int{10, 84, 8, 48, 89, -1, -4, 5, 8, 567, 89, 894, 45}
+	//arr := []int{10, 84, 8, 48, 89, -1, -4, 5, 8, 567, 89, 894, 45}
 	subsequence := []int{84, -4, 5, 8, 45}
-	fmt.Println(traverseSimultaneously(arr, subsequence))
+	//fmt.Println(traverseSimultaneously(arr, subsequence))
+	fmt.Println(subsequence[3:5])
 }
 
+// Time Complexity - O(N) and Space Complexity - O(1)
 func traverseSimultaneously(arr, subseq []int) bool {
 	subseqIdx := 0
 	fmt.Printf("Subsequence items: %v\n", subseq)
@@ -16,6 +18,7 @@ func traverseSimultaneously(arr, subseq []int) bool {
 			break
 		}
 		if val == subseq[subseqIdx] {
+			fmt.Printf("Previous remaining items: %v\n", subseq[subseqIdx:])
 			subseqIdx++
 			fmt.Printf("Value: %v\n", val)
 			fmt.Printf("Ramaining items: %v\n", subseq[subseqIdx:])
